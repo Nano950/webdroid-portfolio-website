@@ -29,7 +29,7 @@
 }
 
 .background__overlay {
-    border-radius: 15px;
+    /* border-radius: 15px; */
     position: fixed;
     top:50%;
     left: 50%;
@@ -44,6 +44,123 @@
 
 .nav,
 main .row,
-footer .container {
+footer .container,
+main .content
+{
     z-index: 10;
+}
+
+.navbar {
+    height: 100px;
+}
+
+main .content
+{
+    position: relative;
+    left: 10%;
+}
+
+nav .container {
+    padding: 0;   
+}
+
+.navbar img {
+    width: 100px;
+    height: 100px;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar-brand {
+    position: relative;
+    left: 50%;
+}
+
+main .content p {
+    max-width: 600px;
+    font-size: 18px;
+}
+
+main p,
+main h1, 
+footer p,
+footer h3  
+{
+    color: white;
+}
+
+/* card styles */
+
+.card 
+{
+    border-radius: 0;
+    height: 800px;
+    background-color: white;
+    z-index: 100;
+}
+
+.card-shadow {
+    position: absolute;
+    width: 18.5rem;
+    height: 800px;
+    border: 3px solid #4ecdc4;
+    transform: translate(25px, 25px);
+}
+
+.card-title 
+{
+    text-align: center;
+    border-bottom: 1px solid #292f36;
+}
+
+button[type="submit"] 
+{
+    background-color: #ff6b6b;
+    border: 1px solid #ff6b6b;
+}
+
+h5
+{
+    text-align: center;
+}
+
+li
+{
+    list-style: none;
+}
+
+li a
+{
+    color:#ff6b6b;
+    text-decoration: none;
+}
+
+
+
+/* footer styles */
+footer 
+{
+    position: absolute;
+    bottom:0%;
+    height: 200px;
+    width: 100%;
+}
+
+footer h3,
+footer p
+{
+    text-align: center;
+}
+
+
+.img-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 250px;
+    margin: 0 auto;
+}
+
+.footer svg { 
+    width: 100px;
+    height: 100px;
 }
