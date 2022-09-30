@@ -1,4 +1,8 @@
+body {
+    overflow-x: hidden;
+}
 
+/* background styles */
 .background {
     position: fixed;
     width: 100%;
@@ -42,126 +46,60 @@
     z-index: 1;
 }
 
-.nav,
-main .row,
-footer .container,
-main .content
+/* content styeles */
+main .container,
+main h2
 {
     z-index: 10;
 }
 
-.navbar {
-    height: 100px;
-}
-
-main .content
+main
 {
     position: relative;
-    left: 10%;
 }
 
-nav .container {
-    padding: 0;   
+main img 
+{
+    max-width: 100%;
+    z-index: 10;
+    box-shadow: 8px 8px 1px #292f36;
 }
 
-.navbar img {
-    width: 100px;
-    height: 100px;
-    padding: 0;
-    margin: 0;
-}
-
-.navbar-brand {
+h1 
+{
+    color: white;
+    text-align: center;
     position: relative;
-    left: 50%;
-    transform: translateX(-50%);
+    top:50%;
+    transform: translateY(-50%);
+    font-size: 48px;
 }
 
-main .content p {
-    max-width: 600px;
-    font-size: 18px;
-}
-
-main p,
-main h1, 
-footer p,
-footer h3  
+h2
 {
     color: white;
 }
 
-/* card styles */
-
-.card 
+.comment-section
 {
-    border-radius: 0;
-    height: 800px;
+    margin-top:50px 
+}
+
+.project-comment
+{
     background-color: white;
-    z-index: 100;
+    opacity: .6;
+    border: 1px solid white;
+    border-radius: 15px;
+    box-shadow: 5px 5px 1px #292f36;
+    margin-top: 10px;
 }
 
-.card-shadow {
-    position: absolute;
-    width: 18.5rem;
-    height: 800px;
-    border: 3px solid #4ecdc4;
-    transform: translate(25px, 25px);
-}
 
-.card-title 
+
+.project-comment p
 {
-    text-align: center;
-    border-bottom: 1px solid #292f36;
-}
-
-button[type="submit"] 
-{
-    background-color: #ff6b6b;
-    border: 1px solid #ff6b6b;
-}
-
-h5
-{
-    text-align: center;
-}
-
-li
-{
-    list-style: none;
-}
-
-li a
-{
-    color:#ff6b6b;
-    text-decoration: none;
-}
-
-
-
-/* footer styles */
-footer 
-{
-    position: absolute;
-    bottom:0%;
-    height: 200px;
-    width: 100%;
-}
-
-footer h3,
-footer p
-{
-    text-align: center;
-}
-
-
-.img-container {
-    display: flex;
-    justify-content: space-between;
-    max-width: 250px;
-    margin: 0 auto;
-}
-
-.footer svg { 
-    width: 100px;
-    height: 100px;
+    text-align: left;
+    font-size: 18px;
+    color: #292f36;
 }
